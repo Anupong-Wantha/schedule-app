@@ -63,7 +63,7 @@ export default function TimeslotsPage() {
                   {byDay[day].length} คาบ
                 </span>
               </div>
-              <div className="divide-y" style={{ divideColor: 'rgba(99,99,160,0.08)' }}>
+              <div className="divide-y divide-[rgba(99,99,160,0.08)]">
                 {byDay[day]
                   .sort((a, b) => (a.period || 0) - (b.period || 0))
                   .map((slot) => (
